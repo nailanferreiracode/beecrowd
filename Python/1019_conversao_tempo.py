@@ -1,10 +1,9 @@
 # -*- coding:utf-8 -*- 
 
+from datetime import timedelta
+
 qtd_segundos = int(input())
+tempo = str(timedelta(seconds=qtd_segundos))
 
-horas, qtd_segundos = divmod(qtd_segundos, 3600)
-minutos, qtd_segundos = divmod(qtd_segundos, 60)
-segundos = qtd_segundos
-
-print(f"{horas}:{minutos}:{segundos}")
+print(tempo)
 
